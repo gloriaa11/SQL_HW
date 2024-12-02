@@ -1,0 +1,11 @@
+-- 为 PERSON 表添加新属性 Ptype
+ALTER TABLE PERSON
+ADD COLUMN Ptype CHAR(10);
+
+-- 取消 PERSON 表中 Page 大于 18 的约束
+ALTER TABLE PERSON
+DROP CONSTRAINT IF EXISTS check_page;
+
+-- 将 ROOM 表中 Rname 的数据类型改成长度为 30
+ALTER TABLE ROOM
+ALTER COLUMN Rname TYPE VARCHAR(30);
