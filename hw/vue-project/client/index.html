@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>餐厅点餐系统</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <h1>欢迎来到餐厅点餐系统</h1>
+
+
+
+    <button id="server-btn" class="btn">服务员登录</button>
+    <button id="customer-btn" class="btn">客户登录</button>
+
+    <script>
+        document.getElementById('server-btn').addEventListener('click', () => {
+            window.location.href = '/employee/login';  // 跳转到服务员登录页面
+        });
+
+        document.getElementById('customer-btn').addEventListener('click', () => {
+            window.location.href = '/customer/login';  // 跳转到客户餐桌号输入页面
+        });
+    </script>
+</body>
+
+</html>
